@@ -28,13 +28,15 @@ struct SetGame {
 
     mutating func select(card: Card) -> State {
         // Check if we had previously already 3 cards
-        let selectedItems = dealedCards.enumerated().filter { item -> Bool in
-            item.element.isSelected
-        }
-        if selectedItems.count == 3 {
+        let selectedCards = dealedCards.filter { $0.isSelected }
+        if selectedCards.count == 3 {
 
             // Replace matched cards with new ones
-            for (index, card) in selectedItems {
+            for card in selectedCards {
+                guard let index = dealedCards.firstIndex(matching: card) else {
+                    print("\(card) suddenly disappeared!?")
+                    continue
+                }
                 if card.isMatched {
                     dealedCards.remove(at: index)
 
