@@ -13,10 +13,16 @@
 		17A3564A2486F44E001F23AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A356492486F44E001F23AD /* Assets.xcassets */; };
 		17A3564D2486F44E001F23AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A3564C2486F44E001F23AD /* Preview Assets.xcassets */; };
 		17A356502486F44E001F23AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A3564E2486F44E001F23AD /* LaunchScreen.storyboard */; };
+		17A3565824879434001F23AD /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A3565724879434001F23AD /* SetGame.swift */; };
+		17A3565A24879F99001F23AD /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A3565924879F99001F23AD /* Array+Identifiable.swift */; };
+		17A3565D2487A0FF001F23AD /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A3565B2487A0FE001F23AD /* GridLayout.swift */; };
+		17A3565E2487A0FF001F23AD /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A3565C2487A0FE001F23AD /* Grid.swift */; };
+		17A356602487CAF9001F23AD /* SetGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A3565F2487CAF9001F23AD /* SetGameViewModel.swift */; };
+		17A356622487D41E001F23AD /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A356612487D41E001F23AD /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17A356402486F44C001F23AD /* Set Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Set Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17A356402486F44C001F23AD /* SET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SET.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A356432486F44C001F23AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17A356452486F44C001F23AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		17A356472486F44C001F23AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +30,12 @@
 		17A3564C2486F44E001F23AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17A3564F2486F44E001F23AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17A356512486F44E001F23AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A3565724879434001F23AD /* SetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
+		17A3565924879F99001F23AD /* Array+Identifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
+		17A3565B2487A0FE001F23AD /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		17A3565C2487A0FE001F23AD /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		17A3565F2487CAF9001F23AD /* SetGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameViewModel.swift; sourceTree = "<group>"; };
+		17A356612487D41E001F23AD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +60,7 @@
 		17A356412486F44C001F23AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17A356402486F44C001F23AD /* Set Game.app */,
+				17A356402486F44C001F23AD /* SET.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,9 +68,15 @@
 		17A356422486F44C001F23AD /* Set Game */ = {
 			isa = PBXGroup;
 			children = (
+				17A356472486F44C001F23AD /* ContentView.swift */,
+				17A3565F2487CAF9001F23AD /* SetGameViewModel.swift */,
+				17A3565724879434001F23AD /* SetGame.swift */,
+				17A356612487D41E001F23AD /* CardView.swift */,
+				17A3565C2487A0FE001F23AD /* Grid.swift */,
+				17A3565B2487A0FE001F23AD /* GridLayout.swift */,
+				17A3565924879F99001F23AD /* Array+Identifiable.swift */,
 				17A356432486F44C001F23AD /* AppDelegate.swift */,
 				17A356452486F44C001F23AD /* SceneDelegate.swift */,
-				17A356472486F44C001F23AD /* ContentView.swift */,
 				17A356492486F44E001F23AD /* Assets.xcassets */,
 				17A3564E2486F44E001F23AD /* LaunchScreen.storyboard */,
 				17A356512486F44E001F23AD /* Info.plist */,
@@ -92,7 +110,7 @@
 			);
 			name = "Set Game";
 			productName = "Set Game";
-			productReference = 17A356402486F44C001F23AD /* Set Game.app */;
+			productReference = 17A356402486F44C001F23AD /* SET.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,8 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17A3565A24879F99001F23AD /* Array+Identifiable.swift in Sources */,
+				17A356622487D41E001F23AD /* CardView.swift in Sources */,
 				17A356442486F44C001F23AD /* AppDelegate.swift in Sources */,
 				17A356462486F44C001F23AD /* SceneDelegate.swift in Sources */,
+				17A356602487CAF9001F23AD /* SetGameViewModel.swift in Sources */,
+				17A3565D2487A0FF001F23AD /* GridLayout.swift in Sources */,
+				17A3565824879434001F23AD /* SetGame.swift in Sources */,
+				17A3565E2487A0FF001F23AD /* Grid.swift in Sources */,
 				17A356482486F44C001F23AD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.Set-Game";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SET;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yourcompany.Set-Game";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SET;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
