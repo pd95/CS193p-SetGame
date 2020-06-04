@@ -29,6 +29,14 @@ class SetGameViewModel: ObservableObject {
                 return "Selected cards do not make a set."
             case .match:
                 return "Well done! Cards match."
+            case .noMoreCards:
+                return """
+                        Well done!
+
+                        You finished the deck of cards.
+
+                        You can start a new game.
+                       """
         }
     }
 

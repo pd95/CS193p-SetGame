@@ -48,6 +48,10 @@ struct SetGame {
                     dealedCards[index].isSelected.toggle()
                 }
             }
+
+            if dealedCards.isEmpty {
+                return .noMoreCards
+            }
         }
 
         guard let index = dealedCards.firstIndex(matching: card) else {
@@ -91,6 +95,7 @@ struct SetGame {
         case selectCard
         case noMatch([AnyHashable])
         case match
+        case noMoreCards
     }
 
     enum Number: Int, CaseIterable, Hashable {
