@@ -36,6 +36,7 @@
 		17A3565C2487A0FE001F23AD /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		17A3565F2487CAF9001F23AD /* SetGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGameViewModel.swift; sourceTree = "<group>"; };
 		17A356612487D41E001F23AD /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		17A356632488F011001F23AD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,7 @@
 		17A356372486F44C001F23AD = {
 			isa = PBXGroup;
 			children = (
+				17A356632488F011001F23AD /* README.md */,
 				17A356422486F44C001F23AD /* Set Game */,
 				17A356412486F44C001F23AD /* Products */,
 			);
