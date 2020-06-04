@@ -39,7 +39,6 @@ struct CardView: View {
     func body(for size: CGSize) -> some View{
         let factor = min(max(0.1, max(size.width, size.height) / 145), 1)
         let symbolCount = card.number.rawValue
-        print(size, factor)
         return ZStack {
             // Background with shadow
             Group {

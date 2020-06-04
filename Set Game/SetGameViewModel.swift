@@ -25,8 +25,8 @@ class SetGameViewModel: ObservableObject {
         switch wasMatch {
             case .selectCard:
                 return "Choose card(s)"
-            case .noMatch(let mismatches):
-                return "Cards do not make a set: \(mismatches.description)"
+            case .noMatch:
+                return "Selected cards do not make a set."
             case .match:
                 return "Well done! Cards match."
         }
@@ -49,6 +49,6 @@ class SetGameViewModel: ObservableObject {
 
     func newGame() {
         model = SetGame()
-        drawCard(3)
+        drawCard(12)
     }
 }

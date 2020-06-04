@@ -21,9 +21,7 @@ struct ContentView: View {
             Grid(self.model.cards) { card in
                 CardView(card: card)
                     .zIndex(card.isSelected ? 2:1)
-                    .border(Color.blue)
                     .padding(max(0, CGFloat(-self.model.cards.count) + 24))
-                    .border(Color.yellow)
                     .onTapGesture {
                         withAnimation {
                             self.model.choose(card)
